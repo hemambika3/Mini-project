@@ -8,7 +8,7 @@ from tkinter import messagebox
 import pickle
 from datetime import date
 import os
-#from PIL import Image,ImageTk
+from PIL import Image,ImageTk
 def tariff():
     try:
         f=open("tariff.dat","wb")
@@ -1094,11 +1094,11 @@ root=Tk()
 root.config(bg="white")
 root.title("BON VOYAGE")
 root.geometry("2000x1333")
-#load=Image.open("image\\projectname.jpg")
-#render=ImageTk.PhotoImage(load)
-#img=Label(root,image=render)
-#img.place(x=0,y=0)
+load=Image.open("image\\projectname.jpg")
+render=ImageTk.PhotoImage(load)
+img=Label(root,image=render)
+img.place(x=0,y=0)
 projectname=Label(root,text ="TRAVEL AGENCY",fg="white",bg="black",font=("Times New Roman",70,"bold","italic")).pack()
-name_of_students=Label(root,text="-K.S.J.SNEHA AND HEMAMBIKA",fg="white",bg="black",font=("Times New Roman",50,"italic")).pack()
+name_of_students=Label(root,text="HEMAMBIKA",fg="white",bg="black",font=("Times New Roman",50,"italic")).pack()
 button=Button(root,text="Continue",fg="black",font=("Times New Roman",14,"bold"),command=newpage).pack()
 root.mainloop()
